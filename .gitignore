@@ -1,3 +1,6 @@
+# Build files
+*.exe
+
 # Prerequisites
 *.d
 
