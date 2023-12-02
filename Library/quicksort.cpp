@@ -78,5 +78,5 @@ void a_display(int a[], int length)
     {
         cout << " " << a[i];
     }
-    cout << endl << endl;
+    cout << endl;
 }

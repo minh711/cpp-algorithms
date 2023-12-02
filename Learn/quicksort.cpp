@@ -88,43 +88,43 @@ int partition(int a[], int low, int high)
     //    6  3  7  5  1  2  4    pivot_value = 4
     //    j
     //
-    //    j++
+    //    j++:
     //
     //    i
     //    6  3  7  5  1  2  4    pivot_value = 4
     //       j
     //
-    //   If j < pivot_value then swap, and i++
+    //   If j < pivot_value then swap, and i++:
     //
     //       i
     //    3  6  7  5  1  2  4    pivot_value = 4
     //       j
     //
-    //   j++
+    //   j++:
     //
     //       i
     //    3  6  7  5  1  2  4    pivot_value = 4
     //          j
     //
-    //    [7] is not < pivot_value, so continue j++
+    //    [7] is not < pivot_value, so continue j++:
     //
     //       i
     //    3  6  7  5  1  2  4    pivot_value = 4
     //             j
     //
-    //   [5] still not < pivot_value, continue j++
+    //   [5] still not < pivot_value, continue j++:
     //
     //       i
     //    3  6  7  5  1  2  4    pivot_value = 4
     //                j
     //
-    //   [1] < pivot_value, then swap them, and i++
+    //   [1] < pivot_value, then swap them, and i++:
     //
     //          i
     //    3  1  7  5  6  2  4    pivot_value = 4
     //                j
     //
-    //    Next step
+    //    Next step:
     //
     //             i
     //    3  1  2  5  1  7  4    pivot_value = 4
@@ -132,7 +132,7 @@ int partition(int a[], int low, int high)
     //
     //    Now j++ is no longer less than the high index, this is where to stop.
     //
-    //    Then swap i with high index
+    //    Then swap i with high index:
     //
     //             i
     //    3  1  2  4  1  7  5    pivot_value = 4
@@ -161,5 +161,5 @@ void a_display(int a[], int length)
     {
         cout << " " << a[i];
     }
-    cout << endl << endl;
+    cout << endl;
 }
