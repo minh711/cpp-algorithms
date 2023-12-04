@@ -17,7 +17,7 @@ Provides easy-to-copy code blocks.
 
 ## References
 
-Following the examples in [C++ Examples](https://www.youtube.com/playlist?list=PLA1FTfKBAEX5gcjcrTga2ld_jA-9Ww4s0) and more on [Portfolio Courses](https://www.youtube.com/@PortfolioCourses)
+Mostly follow the examples in [C++ Examples](https://www.youtube.com/playlist?list=PLA1FTfKBAEX5gcjcrTga2ld_jA-9Ww4s0) and more on [Portfolio Courses](https://www.youtube.com/@PortfolioCourses)
 
 Many thanks to [Portfolio Courses](https://www.youtube.com/@PortfolioCourses)
 
