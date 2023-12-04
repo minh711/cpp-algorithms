@@ -82,3 +82,34 @@ void BST::PrintInOrderPrivate(node* Ptr)
     }
   }
 }
+
+BST::node* BST::ReturnNode(int key)
+{
+  ReturnNodePrivate(key, root);
+}
+
+BST::node* BST::ReturnNodePrivate(int key, node* Ptr)
+{
+  if(Ptr != NULL)
+  {
+    if (Ptr->key == key)
+    {
+      return Ptr;
+    }
+    else
+    {
+      if (key < Ptr->key)
+      {
+        return ReturnNodePrivate(key, Ptr->left);
+      }
+      else
+      {
+        return ReturnNodePrivate(key, Ptr->right);
+      }
+    }
+  }
+  else
+  {
+    return NULL;
+  }
+}
