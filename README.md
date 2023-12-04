@@ -22,3 +22,5 @@ Mostly follow the examples in [C++ Examples](https://www.youtube.com/playlist?li
 Many thanks to [Portfolio Courses](https://www.youtube.com/@PortfolioCourses)
 
 ---
+
+Many thanks to [CodeBeauty](https://www.youtube.com/@CodeBeauty)
