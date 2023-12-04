@@ -7,11 +7,23 @@
 #include <iostream>
 #include <cstdlib>
 
-#include "BST.h"
+#include "BST.cpp"
 
 using namespace std;
 
 int main()
 {
+  int tree_keys[16] = {50, 76, 21, 4, 32, 64, 15, 52, 14, 100, 83, 2, 3, 70, 87, 80};
+  BST tree;
+
+  cout << "Printing the tree in order:" << endl;
+
+  for (int i = 0; i < 16; i++)
+  {
+    tree.AddLeaf(tree_keys[i]);
+  }
+
+  tree.PrintInOrder();
+
   return 0;
 }

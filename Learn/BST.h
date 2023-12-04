@@ -5,6 +5,8 @@
 //        URL: <https://www.youtube.com/playlist?list=PLTxllHdfUq4d-DE16EDkpeb8Z68DU7Z_Q>
 //
 
+
+
 class BST
 {
   private:
@@ -16,15 +18,18 @@ class BST
       node* right;
     };
 
+
     node* root;
 
-    void AddLeftPrivate(int key, node* Ptr);
+    void AddLeafPrivate(int key, node* Ptr);
+    void PrintInOrderPrivate(node* Ptr);
 
   public:
 
     // Function prototypes
     BST();    // Constructor
-    node* CreateLeft(int key);
-    void AddLeft(int key);
+    node* CreateLeaf(int key);
+    void AddLeaf(int key);
+    void PrintInOrder();
 
 };

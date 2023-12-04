@@ -18,7 +18,7 @@ BST::BST()
   root = NULL;
 }
 
-BST::node* BST::CreateLeft(int key)
+BST::node* BST::CreateLeaf(int key)
 {
   node* n = new node;
   n->key = key;
@@ -27,22 +27,22 @@ BST::node* BST::CreateLeft(int key)
   return n;
 }
 
-void BST::AddLeft(int key)
+void BST::AddLeaf(int key)
 {
-  AddLeftPrivate(key, root);
+  AddLeafPrivate(key, root);
 }
 
-void BST::AddLeftPrivate(int key, node* Ptr)
+void BST::AddLeafPrivate(int key, node* Ptr)
 {
-  if (root == null)
+  if (root == NULL)
   {
-    root = CreateLeft(key);
+    root = CreateLeaf(key);
   }
   else if (key < Ptr->key)
   {
-    if(Ptr->left != null)
+    if(Ptr->left != NULL)
     {
-      AddLeftPrivate(key, Ptr->left);
+      AddLeafPrivate(key, Ptr->left);
     }
     else
     {
@@ -51,13 +51,34 @@ void BST::AddLeftPrivate(int key, node* Ptr)
   }
   else if (key > Ptr->key)
   {
-    if(Ptr->right != null)
+    if(Ptr->right != NULL)
     {
-      AddLeftPrivate(key, Ptr->right);
+      AddLeafPrivate(key, Ptr->right);
     }
     else
     {
       Ptr->right = CreateLeaf(key);
+    }
+  }
+}
+
+void BST::PrintInOrder()
+{
+  PrintInOrderPrivate(root);
+}
+
+void BST::PrintInOrderPrivate(node* Ptr)
+{
+  if (root != NULL)
+  {
+    if (Ptr->left != NULL)
+    {
+      PrintInOrderPrivate(Ptr->left);
+    }
+    cout << Ptr->key << " ";
+    if (Ptr->right != NULL)
+    {
+      PrintInOrderPrivate(Ptr->right);
     }
   }
 }
