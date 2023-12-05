@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "fibn"
+  ],
+  "files.associations": {
+    "*.qmd": "markdown",
+    "iostream": "cpp"
+  }
+}
