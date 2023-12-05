@@ -2,6 +2,8 @@
 #include <string>
 
 int main() {
+  //                 01234567
+  //                        12345
   std::string str = "Hello, World!";
 
   // Extract substring starting from index 7 (inclusive) with a length of 5
