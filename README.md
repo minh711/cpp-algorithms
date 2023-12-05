@@ -3,13 +3,13 @@ Learning algorithms in C++
 
 ## Description
 
-### "Learn" folder
+### Learn folder
 
 Include the code with detailed comments (in Vietnamese and English).
 
 ---
 
-### "Library" folder
+### Library folder
 
 The unnecessary comments are removed.
 
