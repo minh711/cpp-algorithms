@@ -25,6 +25,9 @@
   ],
   "files.associations": {
     "*.qmd": "markdown",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "vector": "cpp",
+    "random": "cpp",
+    "ostream": "cpp"
   }
 }
