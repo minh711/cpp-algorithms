@@ -20,7 +20,6 @@ class BST
       node* right;
     };
     node* root;
-
     void  AddLeafPrivate(int key, node* Ptr);
     void  PrintInOrderPrivate(node* Ptr);
     int   FindSmallestPrivate(node* Ptr);
@@ -29,11 +28,8 @@ class BST
     void  RemoveMatch(node* parent, node* match, bool left);
 
   public:
-    // Function prototypes
-    BST();    // Constructor
-
+    BST();
     node* CreateLeaf(int key);
-
     void  AddLeaf(int key);
     void  PrintInOrder();
     int   FindSmallest();
@@ -345,10 +341,8 @@ int main()
     tree.AddLeaf(tree_keys[i]);
   }
 
-  // cout << "Printing the tree in order:" << endl;
+  cout << "Printing the tree in order:" << endl;
   tree.PrintInOrder();
-  // tree.PrintChildren(tree.ReturnRootKey());
-  // cout << "The smallest key is " << tree.FindSmallest() << endl;
 
   cout << "Enter a key value to delete. Enter -1 to stop the process" << endl;
   while (input != -1)
